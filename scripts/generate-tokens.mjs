@@ -46,7 +46,7 @@ import { css } from 'react-strict-dom';
 
 export const tokens = css.defineVars({
 ${allDarkEntries.map(([k, v]) => `    ${k}: '${toCssValue(v)}',`).join('\n')}
-} as Record<string, string>);
+});
 
 export type Tokens = typeof tokens;
 `;
@@ -95,7 +95,7 @@ import { tokens } from '../tokens.css';
 
 export const darkThemeStyle = css.createTheme(tokens, {
 ${allDarkEntries.map(([k, v]) => `    ${k}: '${toCssValue(v)}',`).join('\n')}
-} as Record<string, string>);
+});
 `;
 
 // ─── 6. light.css.ts — StyleX createTheme for light mode ─────────────────────
@@ -105,7 +105,7 @@ import { tokens } from '../tokens.css';
 
 export const lightThemeStyle = css.createTheme(tokens, {
 ${allLightEntries.map(([k, v]) => `    ${k}: '${toCssValue(v)}',`).join('\n')}
-} as Record<string, string>);
+});
 `;
 
 // ─── WRITE ────────────────────────────────────────────────────────────────────

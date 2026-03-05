@@ -2,7 +2,7 @@ import type { Preview } from '@storybook/react-vite';
 import React from 'react';
 import { html, css } from 'react-strict-dom';
 import './react-strict-dom.css';
-import { tokens } from '../src/theme/tokens.css';
+import { ThemeProvider } from '../src/theme';
 
 const styles = css.create({
     container: {
@@ -19,9 +19,11 @@ const styles = css.create({
 const preview: Preview = {
     decorators: [
         (Story) => (
-            <html.div data-layoutconformance="strict" style={styles.container}>
-                <Story />
-            </html.div>
+            <ThemeProvider>
+                <html.div data-layoutconformance="strict" style={styles.container}>
+                    <Story />
+                </html.div>
+            </ThemeProvider>
         ),
     ],
     parameters: {

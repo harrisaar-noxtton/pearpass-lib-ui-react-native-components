@@ -58,7 +58,8 @@ export function ThemeProvider({ theme: initialTheme = ThemeType.Dark, children }
         <ThemeContext.Provider value={value}>
             <html.div
                 data-theme={themeType}
-                style={getThemeStyle(themeType)}
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                style={getThemeStyle(themeType) as any}
             >
                 {children}
             </html.div>

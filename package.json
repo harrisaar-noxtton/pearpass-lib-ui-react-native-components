@@ -7,6 +7,9 @@
   "license": "Apache-2.0",
   "scripts": {
     "generate-tokens": "node scripts/generate-tokens.mjs",
+    "generate-icons:web": "svgr --out-dir src/icons/components src/icons/assets",
+    "generate-icons:native": "svgr --native --ext native.tsx --no-index --out-dir src/icons/components src/icons/assets",
+    "generate-icons": "rm -rf src/icons/components && npm run generate-icons:web && npm run generate-icons:native && node scripts/generate-icon-story.mjs",
     "prepare": "husky || true",
     "lint": "eslint ./src",
     "lint:fix": "eslint --fix ./src",
@@ -30,6 +33,7 @@
     "@storybook/addon-docs": "^10.2.13",
     "@storybook/react-vite": "^10.2.13",
     "@stylexjs/babel-plugin": "^0.15.4",
+    "@svgr/cli": "^8.1.0",
     "@testing-library/react-native": "^13.2.0",
     "@types/react": "^19.2.14",
     "@types/react-native": "^0.72.8",

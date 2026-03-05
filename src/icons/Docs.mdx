@@ -1,0 +1,27 @@
+import { Meta, Title } from '@storybook/addon-docs/blocks';
+
+<Meta title="Icons" name="Docs" />
+
+<Title>Icon Documentation</Title>
+
+## Usage
+
+```tsx
+import { AccountCircleFilled } from 'pearpass-lib-ui-react-native-components';
+
+<AccountCircleFilled />
+```
+
+## Adding New Icons
+
+1. Place the new raw `.svg` file into `src/icons/assets/` (e.g., `HomeFilled.svg`).
+2. Run the generation script:
+
+```bash
+npm run generate-icons
+```
+
+The script will automatically:
+- Replace hardcoded fills with `currentColor`.
+- Generate `MyIcon.native.tsx` (React Native) and `MyIcon.tsx` (Web).
+- Update the Icon Gallery.
