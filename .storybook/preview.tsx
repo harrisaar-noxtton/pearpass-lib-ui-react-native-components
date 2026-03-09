@@ -6,7 +6,8 @@ import { ThemeProvider } from '../src/theme';
 
 const styles = css.create({
     container: {
-        height: '100vh',
+        minHeight: '100vh',
+        padding: 10,
         width: '100%',
         backgroundColor: '#15180E',
         alignItems: 'center',

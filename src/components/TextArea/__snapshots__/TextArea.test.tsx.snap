@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextArea passes disabled to the textarea element 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="TextArea/TextArea.tsx:49"
+  data-style-src="react-strict-dom:web/runtime.js"
+  style={{}}
+>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="TextArea/TextArea.tsx:50"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <textarea
+      className="margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23 borderStyle-x1y0btm7 resize-x288g5"
+      data-element-src="TextArea/TextArea.tsx:66"
+      data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+      dir="auto"
+      disabled={true}
+      id=":r2:"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      ref={null}
+      style={{}}
+    />
+  </div>
+</div>
+`;
+
+exports[`TextArea renders error message when error prop is set 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="TextArea/TextArea.tsx:49"
+  data-style-src="react-strict-dom:web/runtime.js"
+  style={{}}
+>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="TextArea/TextArea.tsx:50"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <textarea
+      aria-describedby=":r3:-error"
+      aria-invalid={true}
+      className="margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23 borderStyle-x1y0btm7 resize-x288g5"
+      data-element-src="TextArea/TextArea.tsx:66"
+      data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+      dir="auto"
+      disabled={false}
+      id=":r3:"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      ref={null}
+      style={{}}
+    />
+  </div>
+  <span
+    id=":r3:-error"
+  >
+    This field is required.
+  </span>
+</div>
+`;
+
+exports[`TextArea renders with label and placeholder 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="TextArea/TextArea.tsx:49"
+  data-style-src="react-strict-dom:web/runtime.js"
+  style={{}}
+>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="TextArea/TextArea.tsx:50"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <label
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="TextArea/TextArea.tsx:59"
+      data-style-src="react-strict-dom:web/runtime.js"
+      htmlFor=":r0:"
+      style={{}}
+    >
+      Description
+    </label>
+    <textarea
+      className="margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23 borderStyle-x1y0btm7 resize-x288g5"
+      data-element-src="TextArea/TextArea.tsx:66"
+      data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+      dir="auto"
+      disabled={false}
+      id=":r0:"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="Write something…"
+      ref={null}
+      style={{}}
+    />
+  </div>
+</div>
+`;
