@@ -6,6 +6,7 @@ jest.mock('./AlertMessage.styles', () => ({
   styles: {
     container: {},
     messageContainer: {},
+    messageContainerBig: {},
     iconContainer: {},
     copy: {},
     title: {},

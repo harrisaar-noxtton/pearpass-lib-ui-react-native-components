@@ -20,6 +20,10 @@ export const styles = css.create({
     gap: 8,
     flex: 1,
   },
+  messageContainerBig: {
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+  },
   iconContainer: {
     display: 'flex',
     width: 24,

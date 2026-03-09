@@ -12,7 +12,7 @@ export const AlertMessage = React.forwardRef<HTMLDivElement, AlertMessageProps>(
         data-testid={testID}
         style={[styles.container, variantStyleMap[variant], sizeStyleMap[size]]}
       >
-        <html.div style={styles.messageContainer}>
+        <html.div style={[styles.messageContainer, size === 'big' && styles.messageContainerBig]}>
           {icon && (
             <html.div style={styles.iconContainer} aria-hidden={true}>
               {icon}
