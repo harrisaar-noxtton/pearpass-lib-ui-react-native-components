@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlertMessage renders correctly with all props 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="AlertMessage/AlertMessage.tsx:9"
+  data-style-src="react-strict-dom:web/runtime.js"
+  data-testid="alert-message"
+  ref={null}
+  style={{}}
+>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="AlertMessage/AlertMessage.tsx:15"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <div
+      aria-hidden={true}
+      className="margin-x1ghz6dp padding-x1717udv"
+      data-element-src="AlertMessage/AlertMessage.tsx:17"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    >
+      <span>
+        Icon
+      </span>
+    </div>
+    <div
+      className="margin-x1ghz6dp padding-x1717udv"
+      data-element-src="AlertMessage/AlertMessage.tsx:21"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    >
+      <div
+        className="margin-x1ghz6dp padding-x1717udv"
+        data-element-src="AlertMessage/AlertMessage.tsx:22"
+        data-style-src="react-strict-dom:web/runtime.js"
+        style={{}}
+      >
+        Test Alert
+      </div>
+      <div
+        className="margin-x1ghz6dp padding-x1717udv"
+        data-element-src="AlertMessage/AlertMessage.tsx:23"
+        data-style-src="react-strict-dom:web/runtime.js"
+        style={{}}
+      >
+        This is a test description.
+      </div>
+    </div>
+  </div>
+  <span
+    className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+    data-element-src="AlertMessage/AlertMessage.tsx:27"
+    data-style-src="react-strict-dom:web/runtime.js"
+    data-testid="alert-action"
+    onClick={[Function]}
+    role="button"
+    style={{}}
+    tabIndex={0}
+  >
+    Test Action
+  </span>
+</div>
+`;
