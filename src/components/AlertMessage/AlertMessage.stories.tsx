@@ -2,7 +2,6 @@ import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import { AlertMessage } from './AlertMessage';
 import AccountCircleSharp from '../../icons/components/AccountCircleSharp';
-import KeyboardArrowRightSharp from '../../icons/components/KeyboardArrowRightSharp';
 
 const meta: Meta<typeof AlertMessage> = {
   title: 'Components/AlertMessage',
@@ -30,7 +29,7 @@ export const BigSuccess: Story = {
     size: 'big',
     title: 'Operation Successful',
     description: 'Your changes have been saved successfully.',
-    icon: <AccountCircleSharp color="#B0D944" style={{ color: '#B0D944' }} />,
+    icon: <AccountCircleSharp color="#B0D944" />,
   },
 };
 
@@ -40,7 +39,7 @@ export const MediumError: Story = {
     size: 'medium',
     title: 'Operation Failed',
     description: 'There was an error saving your changes. Please try again.',
-    icon: <AccountCircleSharp color="#B0D944" style={{ color: '#B0D944' }} />,
+    icon: <AccountCircleSharp color="#B0D944" />,
   },
 };
 
@@ -50,7 +49,7 @@ export const SmallSuccess: Story = {
     size: 'small',
     title: 'Operation Successful', // Won't show up based on comp logic
     description: 'Your changes have been saved successfully.',
-    icon: <AccountCircleSharp color="#B0D944" style={{ color: '#B0D944' }} />,
+    icon: <AccountCircleSharp color="#B0D944" />,
   },
 };
 
@@ -60,7 +59,7 @@ export const WithActionBig: Story = {
     size: 'big',
     title: 'Operation Failed',
     description: 'There was an error saving your changes. Please try again.',
-    icon: <AccountCircleSharp color="#D13B3D" style={{ color: '#D13B3D' }} />,
+    icon: <AccountCircleSharp color="#D13B3D" />,
     actionText: 'Retry',
     onAction: () => console.log('Retry clicked!'),
   },
@@ -72,7 +71,7 @@ export const WithActionMedium: Story = {
     size: 'medium',
     title: 'Operation Successful',
     description: 'Your changes have been saved successfully.',
-    icon: <AccountCircleSharp color="#B0D944" style={{ color: '#B0D944' }} />,
+    icon: <AccountCircleSharp color="#B0D944" />,
     actionText: 'View Details',
     onAction: () => console.log('View details clicked!'),
   },
@@ -84,7 +83,7 @@ export const WithActionSmall: Story = {
     size: 'small',
     title: 'Operation Failed', // Won't show up based on comp logic
     description: 'There was an error saving your changes. Please try again.',
-    icon: <AccountCircleSharp color="#B0D944" style={{ color: '#B0D944' }} />,
+    icon: <AccountCircleSharp color="#B0D944" />,
     actionText: 'Retry',
     onAction: () => console.log('Retry clicked!'),
   },
