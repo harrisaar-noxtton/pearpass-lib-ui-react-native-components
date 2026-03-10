@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputField renders correctly with default props 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="InputField/InputField.tsx:25"
+  data-style-src="react-strict-dom:web/runtime.js"
+  data-testid="email-input"
+  style={{}}
+>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="InputField/InputField.tsx:26"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <div
+      className="margin-x1ghz6dp padding-x1717udv"
+      data-element-src="InputField/InputField.tsx:30"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    >
+      <span
+        className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+        data-element-src="InputField/InputField.tsx:31"
+        data-style-src="react-strict-dom:web/runtime.js"
+        style={{}}
+      >
+        Email Address
+      </span>
+      <input
+        className="margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23 borderStyle-x1y0btm7"
+        data-element-src="InputField/InputField.tsx:32"
+        data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+        dir="auto"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onInput={[Function]}
+        placeholder="Enter your email"
+        style={{}}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InputField renders correctly with error variant, right slot and error message 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="InputField/InputField.tsx:25"
+  data-style-src="react-strict-dom:web/runtime.js"
+  data-testid="username-input"
+  style={{}}
+>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="InputField/InputField.tsx:26"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <div
+      className="margin-x1ghz6dp padding-x1717udv"
+      data-element-src="InputField/InputField.tsx:30"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    >
+      <span
+        className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+        data-element-src="InputField/InputField.tsx:31"
+        data-style-src="react-strict-dom:web/runtime.js"
+        style={{}}
+      >
+        Username
+      </span>
+      <input
+        className="margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23 borderStyle-x1y0btm7"
+        data-element-src="InputField/InputField.tsx:32"
+        data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+        dir="auto"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onInput={[Function]}
+        placeholder="Enter username"
+        style={{}}
+        type="text"
+        value="invalid_user"
+      />
+    </div>
+    <div
+      className="margin-x1ghz6dp padding-x1717udv"
+      data-element-src="InputField/InputField.tsx:43"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    >
+      <span>
+        !
+      </span>
+    </div>
+  </div>
+  <div
+    data-testid="mock-field-error"
+  >
+    Username is invalid.
+  </div>
+</div>
+`;

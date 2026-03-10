@@ -24,6 +24,12 @@ jest.mock('./AlertMessage.styles', () => ({
   },
 }));
 
+jest.mock('../Link/Link.styles', () => ({
+  styles: {
+    linkBase: {},
+  },
+}));
+
 describe('AlertMessage', () => {
   it('renders correctly with all props', () => {
     let component: renderer.ReactTestRenderer;

@@ -26,8 +26,10 @@ export const styles = css.create({
   },
   iconContainer: {
     display: 'flex',
-    width: 24,
-    height: 24,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: tokens.spacing24,
+    height: tokens.spacing24,
     flexShrink: 0,
   },
   copy: {
@@ -40,27 +42,25 @@ export const styles = css.create({
   },
   title: {
     fontFamily: tokens.fontPrimary,
-    fontWeight: '500',
+    fontWeight: tokens.weightMedium,
     fontSize: tokens.fontSize14,
-    lineHeight: '16px',
+    lineHeight: tokens.spacing16,
     color: tokens.colorTextPrimary,
   },
   description: {
     fontFamily: tokens.fontPrimary,
-    fontWeight: '400',
+    fontWeight: tokens.weightRegular,
     fontSize: tokens.fontSize12,
-    lineHeight: '16px',
+    lineHeight: tokens.spacing16,
     color: tokens.colorTextSecondary,
   },
   link: {
     fontFamily: tokens.fontPrimary,
-    fontWeight: '400',
+    fontWeight: tokens.weightRegular,
     fontSize: tokens.fontSize12,
-    lineHeight: '15px',
-    textDecorationLine: 'underline',
-    color: tokens.colorPrimary,
-    cursor: 'pointer',
+    lineHeight: tokens.spacing16,
   },
+
   sizeBig: {
     flexDirection: 'column',
     alignItems: 'flex-start',
