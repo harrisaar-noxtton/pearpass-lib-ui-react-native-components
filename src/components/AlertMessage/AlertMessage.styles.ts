@@ -6,10 +6,10 @@ export const styles = css.create({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 12,
-    gap: 12,
-    borderRadius: 8,
-    backgroundColor: '#212814',
+    padding: tokens.spacing12,
+    gap: tokens.spacing12,
+    borderRadius: tokens.radius8,
+    backgroundColor: tokens.colorSurfaceHover,
   },
   messageContainer: {
     display: 'flex',
@@ -17,7 +17,7 @@ export const styles = css.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 0,
-    gap: 8,
+    gap: tokens.spacing8,
     flex: 1,
   },
   messageContainerBig: {
@@ -41,24 +41,24 @@ export const styles = css.create({
   title: {
     fontFamily: tokens.fontPrimary,
     fontWeight: '500',
-    fontSize: 14,
+    fontSize: tokens.fontSize14,
     lineHeight: '16px',
-    color: '#FFFFFF',
+    color: tokens.colorTextPrimary,
   },
   description: {
     fontFamily: tokens.fontPrimary,
     fontWeight: '400',
-    fontSize: 12,
+    fontSize: tokens.fontSize12,
     lineHeight: '16px',
-    color: '#BDC3AC',
+    color: tokens.colorTextSecondary,
   },
   link: {
     fontFamily: tokens.fontPrimary,
     fontWeight: '400',
-    fontSize: 12,
+    fontSize: tokens.fontSize12,
     lineHeight: '15px',
     textDecorationLine: 'underline',
-    color: '#B0D944',
+    color: tokens.colorPrimary,
     cursor: 'pointer',
   },
   sizeBig: {
@@ -77,7 +77,7 @@ export const styles = css.create({
     // Relying on default container background #212814
   },
   variantError: {
-    backgroundColor: '#351C1D', // A guessed dark error background since not provided by Figma
+    backgroundColor: tokens.colorSurfaceDestructive,
   },
 });
 
