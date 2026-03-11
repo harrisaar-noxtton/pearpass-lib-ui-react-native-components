@@ -53,7 +53,10 @@
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "storybook:native": "cd storybook-native && npx expo start",
+    "storybook:native:ios": "cd storybook-native && npx expo run:ios",
+    "storybook:native:android": "cd storybook-native && npx expo run:android"
   },
   "peerDependencies": {
     "react": "19.0.0",

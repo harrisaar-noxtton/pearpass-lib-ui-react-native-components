@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "Pearpass Storybook",
+    "slug": "pearpass-storybook-native",
+    "version": "0.0.1",
+    "orientation": "portrait",
+    "newArchEnabled": true,
+    "ios": {
+      "bundleIdentifier": "com.pearpass.storybook"
+    },
+    "android": {
+      "package": "com.pearpass.storybook"
+    }
+  }
+}

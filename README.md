@@ -32,6 +32,29 @@ npm run storybook
 
 This will spin up a local server rendering components using Vite and React DOM. You can preview all states and interactions.
 
+### Running Storybook on Native (iOS/Android)
+
+To preview components on a real device or simulator using React Native:
+
+```bash
+cd storybook-native
+npm install
+```
+
+Then run on iOS or Android:
+
+```bash
+# From the root directory
+npm run storybook:native:ios
+npm run storybook:native:android
+
+# Or from the storybook-native directory
+npx expo run:ios
+npx expo run:android
+```
+
+The native Storybook reuses the same stories as the web version. It runs inside a minimal Expo app located in `storybook-native/`.
+
 ## Dependencies
 
 This library has the following peer dependencies:
