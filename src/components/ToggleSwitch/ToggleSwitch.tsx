@@ -42,7 +42,10 @@ export const ToggleSwitch = React.forwardRef<HTMLDivElement, ToggleSwitchProps>(
     return (
       <html.div {...rest} ref={ref} style={styles.root}>
         {hasDetails && (
-          <html.div style={styles.details}>
+          <html.div
+            style={styles.details}
+            onClick={disabled ? undefined : handleToggle}
+          >
             {label && <Text>{label}</Text>}
             {description && (
               <Text variant="caption" style={styles.description}>

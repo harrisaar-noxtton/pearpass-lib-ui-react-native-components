@@ -1,0 +1,37 @@
+{
+  "name": "storybook-native",
+  "version": "0.0.1",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "ios": "expo run:ios",
+    "android": "expo run:android",
+    "postinstall": "node -e \"const f=require('fs'),p='node_modules/@babel/runtime/package.json',j=JSON.parse(f.readFileSync(p));delete j.exports;f.writeFileSync(p,JSON.stringify(j,null,2))\""
+  },
+  "dependencies": {
+    "@gorhom/bottom-sheet": "^5.1.0",
+    "@react-native-async-storage/async-storage": "2.1.2",
+    "expo": "~53.0.0",
+    "react": "19.0.0",
+    "react-native": "0.79.6",
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-reanimated": "~3.17.0",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-svg": "15.11.2",
+    "react-strict-dom": "^0.0.55"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@storybook/addon-ondevice-actions": "^10.2.3",
+    "@storybook/addon-ondevice-controls": "^10.2.3",
+    "@storybook/react": "^10.2.13",
+    "@storybook/react-native": "^10.2.3",
+    "@types/react": "~19.0.10",
+    "storybook": "^10.2.13",
+    "typescript": "~5.8.3"
+  },
+  "overrides": {
+    "react-dom": "19.0.0"
+  }
+}

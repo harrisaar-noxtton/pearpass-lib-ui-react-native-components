@@ -130,4 +130,48 @@ describe('ToggleSwitch', () => {
 
     expect(component!.toJSON()).toMatchSnapshot()
   })
+
+  it('calls onChange when the label is clicked', () => {
+    const onChange = jest.fn()
+    let component: renderer.ReactTestRenderer
+
+    act(() => {
+      component = renderer.create(
+        <ToggleSwitch checked={false} onChange={onChange} label="Toggle" />
+      )
+    })
+
+    const labelArea = component!.root.findAll(
+      (node) => typeof node.props.onClick === 'function' && !node.props.role
+    )[0]
+
+    act(() => {
+      labelArea.props.onClick()
+    })
+
+    expect(onChange).toHaveBeenCalledWith(true)
+  })
+
+  it('does not call onChange via label when disabled', () => {
+    const onChange = jest.fn()
+    let component: renderer.ReactTestRenderer
+
+    act(() => {
+      component = renderer.create(
+        <ToggleSwitch
+          checked={false}
+          onChange={onChange}
+          disabled
+          label="Toggle"
+        />
+      )
+    })
+
+    const labelAreaHandlers = component!.root.findAll(
+      (node) => typeof node.props.onClick === 'function' && !node.props.role
+    )
+
+    expect(labelAreaHandlers).toHaveLength(0)
+    expect(onChange).not.toHaveBeenCalled()
+  })
 })

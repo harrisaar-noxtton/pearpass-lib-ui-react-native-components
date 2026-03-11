@@ -1,0 +1,6 @@
+node_modules/
+.expo/
+ios/
+android/
+*.tsbuildinfo
+.rnstorybook/storybook.requires.ts

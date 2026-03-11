@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb renders actions when provided 1`] = `
+<nav
+  aria-label="Breadcrumb"
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="Breadcrumb/Breadcrumb.tsx:15"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <ol
+    className="listStyle-xe8uvvx margin-x1ghz6dp padding-x1717udv"
+    data-element-src="Breadcrumb/Breadcrumb.tsx:16"
+    data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+    style={{}}
+  >
+    <li
+      className="margin-x1ghz6dp padding-x1717udv"
+      data-element-src="Breadcrumb/Breadcrumb.tsx:25"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    >
+      All Items
+    </li>
+  </ol>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="Breadcrumb/Breadcrumb.tsx:33"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <button>
+      Action
+    </button>
+  </div>
+</nav>
+`;
+
+exports[`Breadcrumb renders multiple items with separators 1`] = `
+<nav
+  aria-label="Breadcrumb"
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="Breadcrumb/Breadcrumb.tsx:15"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <ol
+    className="listStyle-xe8uvvx margin-x1ghz6dp padding-x1717udv"
+    data-element-src="Breadcrumb/Breadcrumb.tsx:16"
+    data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+    style={{}}
+  >
+    <li
+      className="margin-x1ghz6dp padding-x1717udv"
+      data-element-src="Breadcrumb/Breadcrumb.tsx:25"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    >
+      All Items
+    </li>
+    <li
+      aria-hidden={true}
+      className="margin-x1ghz6dp padding-x1717udv"
+      data-element-src="Breadcrumb/Breadcrumb.tsx:21"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    />
+    <li
+      className="margin-x1ghz6dp padding-x1717udv"
+      data-element-src="Breadcrumb/Breadcrumb.tsx:25"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    >
+      All Folders
+    </li>
+  </ol>
+</nav>
+`;
+
+exports[`Breadcrumb renders single item 1`] = `
+<nav
+  aria-label="Breadcrumb"
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="Breadcrumb/Breadcrumb.tsx:15"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <ol
+    className="listStyle-xe8uvvx margin-x1ghz6dp padding-x1717udv"
+    data-element-src="Breadcrumb/Breadcrumb.tsx:16"
+    data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+    style={{}}
+  >
+    <li
+      className="margin-x1ghz6dp padding-x1717udv"
+      data-element-src="Breadcrumb/Breadcrumb.tsx:25"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    >
+      All Items
+    </li>
+  </ol>
+</nav>
+`;

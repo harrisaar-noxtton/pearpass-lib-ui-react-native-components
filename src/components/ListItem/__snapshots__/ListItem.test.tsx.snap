@@ -1,0 +1,450 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem applies selected state correctly 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="ListItem/ListItem.tsx:56"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="ListItem/ListItem.tsx:66"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      Selected Item
+    </span>
+  </div>
+</div>
+`;
+
+exports[`ListItem renders icon, title, subtitle, and right element together 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="ListItem/ListItem.tsx:56"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <span
+    aria-hidden={true}
+    className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+    data-element-src="ListItem/ListItem.tsx:58"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  />
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="ListItem/ListItem.tsx:66"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      Full Item
+    </span>
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      Details here
+    </span>
+  </div>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="ListItem/ListItem.tsx:72"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <button>
+      Action
+    </button>
+  </div>
+</div>
+`;
+
+exports[`ListItem renders object subtitle with divider 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="ListItem/ListItem.tsx:56"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="ListItem/ListItem.tsx:66"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      Divided
+    </span>
+    <div
+      className="margin-x1ghz6dp padding-x1717udv"
+      data-element-src="ListItem/ListItem.tsx:47"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    >
+      <span
+        className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+        data-element-src="Text/Text.tsx:31"
+        data-style-src="react-strict-dom:web/runtime.js"
+        ref={null}
+        style={{}}
+      >
+        Left
+      </span>
+      <div
+        className="margin-x1ghz6dp padding-x1717udv"
+        data-element-src="ListItem/ListItem.tsx:49"
+        data-style-src="react-strict-dom:web/runtime.js"
+        style={{}}
+      />
+      <span
+        className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+        data-element-src="Text/Text.tsx:31"
+        data-style-src="react-strict-dom:web/runtime.js"
+        ref={null}
+        style={{}}
+      >
+        Right
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ListItem renders title correctly 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="ListItem/ListItem.tsx:56"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="ListItem/ListItem.tsx:66"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      My Item
+    </span>
+  </div>
+</div>
+`;
+
+exports[`ListItem renders vertical subtitle layout 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="ListItem/ListItem.tsx:56"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="ListItem/ListItem.tsx:66"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      Vertical
+    </span>
+    <div
+      className="margin-x1ghz6dp padding-x1717udv"
+      data-element-src="ListItem/ListItem.tsx:38"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    >
+      <span
+        className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+        data-element-src="Text/Text.tsx:31"
+        data-style-src="react-strict-dom:web/runtime.js"
+        ref={null}
+        style={{}}
+      >
+        Top
+      </span>
+      <div
+        className="margin-x1ghz6dp padding-x1717udv"
+        data-element-src="ListItem/ListItem.tsx:40"
+        data-style-src="react-strict-dom:web/runtime.js"
+        style={{}}
+      />
+      <span
+        className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+        data-element-src="Text/Text.tsx:31"
+        data-style-src="react-strict-dom:web/runtime.js"
+        ref={null}
+        style={{}}
+      >
+        Bottom
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ListItem renders with custom iconSize 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="ListItem/ListItem.tsx:56"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <span
+    aria-hidden={true}
+    className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+    data-element-src="ListItem/ListItem.tsx:58"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  />
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="ListItem/ListItem.tsx:66"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      Custom Icon Size
+    </span>
+  </div>
+</div>
+`;
+
+exports[`ListItem renders with icon 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="ListItem/ListItem.tsx:56"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <span
+    aria-hidden={true}
+    className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+    data-element-src="ListItem/ListItem.tsx:58"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  />
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="ListItem/ListItem.tsx:66"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      My Item
+    </span>
+  </div>
+</div>
+`;
+
+exports[`ListItem renders with object subtitle (primary + secondary) 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="ListItem/ListItem.tsx:56"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="ListItem/ListItem.tsx:66"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      My Item
+    </span>
+    <div
+      className="margin-x1ghz6dp padding-x1717udv"
+      data-element-src="ListItem/ListItem.tsx:47"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    >
+      <span
+        className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+        data-element-src="Text/Text.tsx:31"
+        data-style-src="react-strict-dom:web/runtime.js"
+        ref={null}
+        style={{}}
+      >
+        user@email.com
+      </span>
+      <div
+        className="margin-x1ghz6dp padding-x1717udv"
+        data-element-src="ListItem/ListItem.tsx:49"
+        data-style-src="react-strict-dom:web/runtime.js"
+        style={{}}
+      />
+      <span
+        className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+        data-element-src="Text/Text.tsx:31"
+        data-style-src="react-strict-dom:web/runtime.js"
+        ref={null}
+        style={{}}
+      >
+        Updated today
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ListItem renders with right element 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="ListItem/ListItem.tsx:56"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="ListItem/ListItem.tsx:66"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      My Item
+    </span>
+  </div>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="ListItem/ListItem.tsx:72"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <button>
+      Action
+    </button>
+  </div>
+</div>
+`;
+
+exports[`ListItem renders with showDivider 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="ListItem/ListItem.tsx:56"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="ListItem/ListItem.tsx:66"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      With Divider
+    </span>
+  </div>
+</div>
+`;
+
+exports[`ListItem renders with string subtitle 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="ListItem/ListItem.tsx:56"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="ListItem/ListItem.tsx:66"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      My Item
+    </span>
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      Some subtitle
+    </span>
+  </div>
+</div>
+`;

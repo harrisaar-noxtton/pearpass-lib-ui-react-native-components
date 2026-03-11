@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavbarListItem applies selected state correctly 1`] = `
+<button
+  aria-selected={true}
+  className="borderStyle-x1y0btm7 margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23"
+  data-element-src="NavbarListItem/NavbarListItem.tsx:49"
+  data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+  ref={null}
+  style={{}}
+  type="button"
+>
+  <span
+    className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+    data-element-src="NavbarListItem/NavbarListItem.tsx:74"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    All Items
+  </span>
+</button>
+`;
+
+exports[`NavbarListItem renders destructive variant 1`] = `
+<button
+  aria-selected={false}
+  className="borderStyle-x1y0btm7 margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23"
+  data-element-src="NavbarListItem/NavbarListItem.tsx:49"
+  data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+  ref={null}
+  style={{}}
+  type="button"
+>
+  <span
+    className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+    data-element-src="NavbarListItem/NavbarListItem.tsx:74"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    Delete Item
+  </span>
+</button>
+`;
+
+exports[`NavbarListItem renders label correctly 1`] = `
+<button
+  aria-selected={false}
+  className="borderStyle-x1y0btm7 margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23"
+  data-element-src="NavbarListItem/NavbarListItem.tsx:49"
+  data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+  ref={null}
+  style={{}}
+  type="button"
+>
+  <span
+    className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+    data-element-src="NavbarListItem/NavbarListItem.tsx:74"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    All Items
+  </span>
+</button>
+`;
+
+exports[`NavbarListItem renders secondary variant 1`] = `
+<button
+  aria-selected={false}
+  className="borderStyle-x1y0btm7 margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23"
+  data-element-src="NavbarListItem/NavbarListItem.tsx:49"
+  data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+  ref={null}
+  style={{}}
+  type="button"
+>
+  <span
+    className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+    data-element-src="NavbarListItem/NavbarListItem.tsx:74"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    Logins
+  </span>
+</button>
+`;
+
+exports[`NavbarListItem renders with icon and count 1`] = `
+<button
+  aria-selected={false}
+  className="borderStyle-x1y0btm7 margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23"
+  data-element-src="NavbarListItem/NavbarListItem.tsx:49"
+  data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+  ref={null}
+  style={{}}
+  type="button"
+>
+  <span
+    aria-hidden={true}
+    className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+    data-element-src="NavbarListItem/NavbarListItem.tsx:66"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  />
+  <span
+    className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+    data-element-src="NavbarListItem/NavbarListItem.tsx:74"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    All Items
+  </span>
+  <span
+    aria-label="49 items"
+    className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+    data-element-src="NavbarListItem/NavbarListItem.tsx:77"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    49
+  </span>
+</button>
+`;

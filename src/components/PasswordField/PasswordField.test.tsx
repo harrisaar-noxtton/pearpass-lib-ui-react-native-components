@@ -2,6 +2,7 @@ import React from 'react';
 import renderer, { act } from 'react-test-renderer';
 import { PasswordField } from './PasswordField';
 
+
 jest.mock('./PasswordField.styles', () => ({
   styles: {
     rightSlotContainer: {},
@@ -107,7 +108,6 @@ jest.mock('../FieldError/FieldError', () => ({
     <span data-testid="mock-field-error">{children}</span>
   ),
 }));
-
 jest.mock('../../icons', () => ({
   EyeFilled: () => <div data-testid="eye-filled" />,
   EyeOutlined: () => <div data-testid="eye-outlined" />,
@@ -198,7 +198,6 @@ describe('PasswordField', () => {
     expect(onChangeTextMock).toHaveBeenCalledWith('secret123');
     expect(onChangeTextMock).toHaveBeenCalledTimes(1);
   });
-
   it('toggles input type between password and text when eye button is clicked', () => {
     let component: renderer.ReactTestRenderer;
 
