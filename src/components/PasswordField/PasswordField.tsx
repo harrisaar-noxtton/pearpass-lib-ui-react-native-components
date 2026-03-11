@@ -32,6 +32,7 @@ export const PasswordField = (props: PasswordFieldProps): React.ReactElement => 
       onClick={toggleVisibility}
       aria-label={isVisible ? EYE_OPEN_LABEL : EYE_CLOSED_LABEL}
       iconBefore={isVisible ? <EyeFilled width={20} height={20} /> : <EyeOutlined width={20} height={20} />}
+      data-testid="password-field-eye-button"
     />
   );
 
