@@ -2,6 +2,7 @@ import React from 'react';
 import { html } from 'react-strict-dom';
 import { styles, variantContainerStyleMap } from './InputField.styles';
 import { FieldError } from '../FieldError/FieldError';
+import { Text } from '../Text/Text';
 import { InputFieldProps } from './types';
 
 export const InputField = (props: InputFieldProps): React.ReactElement => {
@@ -28,7 +29,7 @@ export const InputField = (props: InputFieldProps): React.ReactElement => {
         isFocused && variant !== 'error' && styles.containerFocused
       ]}>
         <html.div style={styles.innerColumn}>
-          <html.span style={styles.label}>{label}</html.span>
+          <Text variant="label" style={styles.label}>{label}</Text>
           <html.input
             type={inputType}
             value={value}

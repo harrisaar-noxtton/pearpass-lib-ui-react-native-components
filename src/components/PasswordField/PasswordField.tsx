@@ -1,6 +1,7 @@
 import React from 'react';
 import { html } from 'react-strict-dom';
 import { EyeFilled, EyeOutlined } from '../../icons';
+import { Button } from '../Button/Button';
 import { InputField } from '../InputField/InputField';
 import { PasswordIndicator } from '../PasswordIndicator/PasswordIndicator';
 import { styles } from './PasswordField.styles';
@@ -26,17 +27,12 @@ export const PasswordField = (props: PasswordFieldProps): React.ReactElement => 
   const toggleVisibility = (): void => setIsVisible((prev) => !prev);
 
   const eyeIcon = (
-    <html.button
+    <Button
+      variant="tertiary"
       onClick={toggleVisibility}
       aria-label={isVisible ? EYE_OPEN_LABEL : EYE_CLOSED_LABEL}
-      style={styles.eyeButton}
-    >
-      {isVisible ? (
-        <EyeFilled width={20} height={20} />
-      ) : (
-        <EyeOutlined width={20} height={20} />
-      )}
-    </html.button>
+      iconBefore={isVisible ? <EyeFilled width={20} height={20} /> : <EyeOutlined width={20} height={20} />}
+    />
   );
 
   const rightSlot = (
