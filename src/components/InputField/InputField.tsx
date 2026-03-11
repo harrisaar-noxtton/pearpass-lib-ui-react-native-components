@@ -15,6 +15,7 @@ export const InputField = (props: InputFieldProps): React.ReactElement => {
     errorMessage,
     inputType = 'text',
     rightSlot,
+    isGrouped,
     testID,
   } = props;
   const [isFocused, setIsFocused] = React.useState(false);
@@ -26,6 +27,7 @@ export const InputField = (props: InputFieldProps): React.ReactElement => {
     <html.div style={styles.wrapper} data-testid={testID}>
       <html.div style={[
         variantContainerStyleMap[variant],
+        isGrouped && styles.containerGrouped,
         isFocused && variant !== 'error' && styles.containerFocused
       ]}>
         <html.div style={styles.innerColumn}>

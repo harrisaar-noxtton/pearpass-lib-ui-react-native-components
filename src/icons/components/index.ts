@@ -4,6 +4,8 @@ export { default as AccountCircleOutlined } from "./AccountCircleOutlined";
 export { default as AccountCircleRound } from "./AccountCircleRound";
 export { default as AccountCircleSharp } from "./AccountCircleSharp";
 export { default as AccountCircleTone } from "./AccountCircleTone";
+export { default as Add } from "./Add";
+export { default as Close } from "./Close";
 export { default as DoneAll } from "./DoneAll";
 export { default as ErrorFilled } from "./ErrorFilled";
 export { default as EyeFilled } from "./EyeFilled";

@@ -21,9 +21,24 @@ jest.mock('./InputField.styles', () => ({
   },
 }));
 
+jest.mock('../Text/Text.styles', () => ({
+  styles: {
+    textBase: {},
+    variantLabel: {},
+    variantBody: {},
+    variantBodyEmphasized: {},
+    variantCaption: {},
+  },
+}));
+
+jest.mock('../Text/Text.config', () => ({
+  variantStyleMap: { label: {}, body: {}, bodyEmphasized: {}, caption: {} },
+}));
+
 jest.mock('../FieldError/FieldError', () => ({
   FieldError: (props: FieldErrorProps) => <div data-testid="mock-field-error" {...props} />
 }));
+
 
 describe('InputField', () => {
   it('renders correctly with default props', () => {

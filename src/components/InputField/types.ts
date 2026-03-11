@@ -15,5 +15,7 @@ export interface InputFieldProps {
   inputType?: 'text' | 'password';
   /** Optional node rendered on the right side inside the container (e.g. eye icon) */
   rightSlot?: React.ReactNode;
+  /** When true, removes external borders and radius for grouping (keeps bottom border) */
+  isGrouped?: boolean;
   testID?: string;
 }

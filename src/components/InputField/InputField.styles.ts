@@ -38,6 +38,14 @@ export const styles = css.create({
   containerError: {
     borderColor: tokens.colorSurfaceError,
   },
+  containerGrouped: {
+    borderRadius: 0,
+    borderTopWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderBottomWidth: '1px',
+    backgroundColor: 'transparent',
+  },
   innerColumn: {
     display: 'flex',
     flexDirection: 'column',
