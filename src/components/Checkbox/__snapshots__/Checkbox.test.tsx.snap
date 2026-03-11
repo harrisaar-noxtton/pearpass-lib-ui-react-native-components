@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox renders checked state 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="Checkbox/Checkbox.tsx:44"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <button
+    aria-checked={true}
+    aria-label="Accept terms"
+    className="borderStyle-x1y0btm7 margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23"
+    data-element-src="Checkbox/Checkbox.tsx:45"
+    data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+    disabled={false}
+    onClick={[Function]}
+    role="checkbox"
+    style={{}}
+    type="button"
+  >
+    <span
+      aria-hidden={true}
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Checkbox/Checkbox.tsx:55"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    />
+  </button>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="Checkbox/Checkbox.tsx:62"
+    data-style-src="react-strict-dom:web/runtime.js"
+    onClick={[Function]}
+    style={{}}
+  >
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      Accept terms
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Checkbox renders disabled state 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="Checkbox/Checkbox.tsx:44"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <button
+    aria-checked={true}
+    aria-disabled={true}
+    aria-label="Accept terms"
+    className="borderStyle-x1y0btm7 margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23"
+    data-element-src="Checkbox/Checkbox.tsx:45"
+    data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+    disabled={true}
+    role="checkbox"
+    style={{}}
+    type="button"
+  >
+    <span
+      aria-hidden={true}
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Checkbox/Checkbox.tsx:55"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    />
+  </button>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="Checkbox/Checkbox.tsx:62"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  >
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      Accept terms
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Checkbox renders unchecked state 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="Checkbox/Checkbox.tsx:44"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <button
+    aria-checked={false}
+    aria-label="Accept terms"
+    className="borderStyle-x1y0btm7 margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23"
+    data-element-src="Checkbox/Checkbox.tsx:45"
+    data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+    disabled={false}
+    onClick={[Function]}
+    role="checkbox"
+    style={{}}
+    type="button"
+  />
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="Checkbox/Checkbox.tsx:62"
+    data-style-src="react-strict-dom:web/runtime.js"
+    onClick={[Function]}
+    style={{}}
+  >
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      Accept terms
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Checkbox renders with label and description 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="Checkbox/Checkbox.tsx:44"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <button
+    aria-checked={false}
+    aria-label="Accept terms"
+    className="borderStyle-x1y0btm7 margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23"
+    data-element-src="Checkbox/Checkbox.tsx:45"
+    data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+    disabled={false}
+    onClick={[Function]}
+    role="checkbox"
+    style={{}}
+    type="button"
+  />
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="Checkbox/Checkbox.tsx:62"
+    data-style-src="react-strict-dom:web/runtime.js"
+    onClick={[Function]}
+    style={{}}
+  >
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      Accept terms
+    </span>
+    <span
+      className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+      data-element-src="Text/Text.tsx:31"
+      data-style-src="react-strict-dom:web/runtime.js"
+      ref={null}
+      style={{}}
+    >
+      I agree to the terms and conditions
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Checkbox renders without label or description 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="Checkbox/Checkbox.tsx:44"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  style={{}}
+>
+  <button
+    aria-checked={false}
+    aria-label="Accept terms"
+    className="borderStyle-x1y0btm7 margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23"
+    data-element-src="Checkbox/Checkbox.tsx:45"
+    data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
+    disabled={false}
+    onClick={[Function]}
+    role="checkbox"
+    style={{}}
+    type="button"
+  />
+</div>
+`;

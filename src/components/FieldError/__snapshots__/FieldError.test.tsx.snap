@@ -5,6 +5,7 @@ exports[`FieldError renders the error message 1`] = `
   className="margin-x1ghz6dp padding-x1717udv"
   data-element-src="FieldError/FieldError.tsx:13"
   data-style-src="react-strict-dom:web/runtime.js"
+  role="alert"
   style={{}}
 >
   <span

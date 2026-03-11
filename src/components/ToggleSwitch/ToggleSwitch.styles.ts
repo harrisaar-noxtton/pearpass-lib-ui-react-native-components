@@ -17,7 +17,8 @@ export const styles = css.create({
     gap: tokens.spacing4,
     flexGrow: 1,
     flexShrink: 0,
-    flexBasis: 0
+    flexBasis: 0,
+    cursor: 'pointer'
   },
   label: {
     color: tokens.colorTextPrimary,

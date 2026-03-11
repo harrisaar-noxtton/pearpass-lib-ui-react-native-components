@@ -12,6 +12,7 @@ exports[`ToggleSwitch renders checked state 1`] = `
     className="margin-x1ghz6dp padding-x1717udv"
     data-element-src="ToggleSwitch/ToggleSwitch.tsx:45"
     data-style-src="react-strict-dom:web/runtime.js"
+    onClick={[Function]}
     style={{}}
   >
     <span
@@ -28,7 +29,7 @@ exports[`ToggleSwitch renders checked state 1`] = `
     aria-checked={true}
     aria-label="Toggle"
     className="borderStyle-x1y0btm7 margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23"
-    data-element-src="ToggleSwitch/ToggleSwitch.tsx:55"
+    data-element-src="ToggleSwitch/ToggleSwitch.tsx:58"
     data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
     disabled={false}
     onClick={[Function]}
@@ -38,7 +39,7 @@ exports[`ToggleSwitch renders checked state 1`] = `
   >
     <div
       className="margin-x1ghz6dp padding-x1717udv"
-      data-element-src="ToggleSwitch/ToggleSwitch.tsx:64"
+      data-element-src="ToggleSwitch/ToggleSwitch.tsx:67"
       data-style-src="react-strict-dom:web/runtime.js"
       style={{}}
     />
@@ -58,6 +59,7 @@ exports[`ToggleSwitch renders label only without description 1`] = `
     className="margin-x1ghz6dp padding-x1717udv"
     data-element-src="ToggleSwitch/ToggleSwitch.tsx:45"
     data-style-src="react-strict-dom:web/runtime.js"
+    onClick={[Function]}
     style={{}}
   >
     <span
@@ -74,7 +76,7 @@ exports[`ToggleSwitch renders label only without description 1`] = `
     aria-checked={false}
     aria-label="Label only"
     className="borderStyle-x1y0btm7 margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23"
-    data-element-src="ToggleSwitch/ToggleSwitch.tsx:55"
+    data-element-src="ToggleSwitch/ToggleSwitch.tsx:58"
     data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
     disabled={false}
     onClick={[Function]}
@@ -84,7 +86,7 @@ exports[`ToggleSwitch renders label only without description 1`] = `
   >
     <div
       className="margin-x1ghz6dp padding-x1717udv"
-      data-element-src="ToggleSwitch/ToggleSwitch.tsx:64"
+      data-element-src="ToggleSwitch/ToggleSwitch.tsx:67"
       data-style-src="react-strict-dom:web/runtime.js"
       style={{}}
     />
@@ -104,6 +106,7 @@ exports[`ToggleSwitch renders unchecked state 1`] = `
     className="margin-x1ghz6dp padding-x1717udv"
     data-element-src="ToggleSwitch/ToggleSwitch.tsx:45"
     data-style-src="react-strict-dom:web/runtime.js"
+    onClick={[Function]}
     style={{}}
   >
     <span
@@ -120,7 +123,7 @@ exports[`ToggleSwitch renders unchecked state 1`] = `
     aria-checked={false}
     aria-label="Toggle"
     className="borderStyle-x1y0btm7 margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23"
-    data-element-src="ToggleSwitch/ToggleSwitch.tsx:55"
+    data-element-src="ToggleSwitch/ToggleSwitch.tsx:58"
     data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
     disabled={false}
     onClick={[Function]}
@@ -130,7 +133,7 @@ exports[`ToggleSwitch renders unchecked state 1`] = `
   >
     <div
       className="margin-x1ghz6dp padding-x1717udv"
-      data-element-src="ToggleSwitch/ToggleSwitch.tsx:64"
+      data-element-src="ToggleSwitch/ToggleSwitch.tsx:67"
       data-style-src="react-strict-dom:web/runtime.js"
       style={{}}
     />
@@ -150,6 +153,7 @@ exports[`ToggleSwitch renders with label and description 1`] = `
     className="margin-x1ghz6dp padding-x1717udv"
     data-element-src="ToggleSwitch/ToggleSwitch.tsx:45"
     data-style-src="react-strict-dom:web/runtime.js"
+    onClick={[Function]}
     style={{}}
   >
     <span
@@ -175,7 +179,7 @@ exports[`ToggleSwitch renders with label and description 1`] = `
     aria-checked={false}
     aria-label="Notifications"
     className="borderStyle-x1y0btm7 margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23"
-    data-element-src="ToggleSwitch/ToggleSwitch.tsx:55"
+    data-element-src="ToggleSwitch/ToggleSwitch.tsx:58"
     data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
     disabled={false}
     onClick={[Function]}
@@ -185,7 +189,7 @@ exports[`ToggleSwitch renders with label and description 1`] = `
   >
     <div
       className="margin-x1ghz6dp padding-x1717udv"
-      data-element-src="ToggleSwitch/ToggleSwitch.tsx:64"
+      data-element-src="ToggleSwitch/ToggleSwitch.tsx:67"
       data-style-src="react-strict-dom:web/runtime.js"
       style={{}}
     />
@@ -205,7 +209,7 @@ exports[`ToggleSwitch renders without label or description 1`] = `
     aria-checked={false}
     aria-label="Toggle"
     className="borderStyle-x1y0btm7 margin-x1ghz6dp padding-x1717udv borderWidth-xmkeg23"
-    data-element-src="ToggleSwitch/ToggleSwitch.tsx:55"
+    data-element-src="ToggleSwitch/ToggleSwitch.tsx:58"
     data-style-src="react-strict-dom:web/runtime.js,web/runtime.js"
     disabled={false}
     onClick={[Function]}
@@ -215,7 +219,7 @@ exports[`ToggleSwitch renders without label or description 1`] = `
   >
     <div
       className="margin-x1ghz6dp padding-x1717udv"
-      data-element-src="ToggleSwitch/ToggleSwitch.tsx:64"
+      data-element-src="ToggleSwitch/ToggleSwitch.tsx:67"
       data-style-src="react-strict-dom:web/runtime.js"
       style={{}}
     />

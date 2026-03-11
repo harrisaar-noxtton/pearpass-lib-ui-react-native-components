@@ -1,21 +1,22 @@
 import React from 'react'
 import renderer, { act } from 'react-test-renderer'
-import { ToggleSwitch } from './ToggleSwitch'
+import { Checkbox } from './Checkbox'
 
-jest.mock('./ToggleSwitch.styles', () => ({
+jest.mock('./Checkbox.styles', () => ({
   styles: {
     root: {},
     details: {},
-    label: {},
     description: {},
-    rail: {},
-    railUnchecked: {},
-    railChecked: {},
-    railDisabled: {},
-    knob: {},
-    knobUnchecked: {},
-    knobChecked: {}
+    checkboxBase: {},
+    checkboxUnchecked: {},
+    checkboxChecked: {},
+    checkboxDisabled: {},
+    checkIconWrapper: {}
   }
+}))
+
+jest.mock('../../icons', () => ({
+  Check: () => null
 }))
 
 jest.mock('../Text/Text.styles', () => ({
@@ -28,12 +29,12 @@ jest.mock('../Text/Text.styles', () => ({
   }
 }))
 
-describe('ToggleSwitch', () => {
+describe('Checkbox', () => {
   it('renders without label or description', () => {
     let component: renderer.ReactTestRenderer
 
     act(() => {
-      component = renderer.create(<ToggleSwitch aria-label="Toggle" />)
+      component = renderer.create(<Checkbox aria-label="Accept terms" />)
     })
 
     expect(component!.toJSON()).toMatchSnapshot()
@@ -44,9 +45,9 @@ describe('ToggleSwitch', () => {
 
     act(() => {
       component = renderer.create(
-        <ToggleSwitch
-          label="Notifications"
-          description="Receive push notifications"
+        <Checkbox
+          label="Accept terms"
+          description="I agree to the terms and conditions"
         />
       )
     })
@@ -59,7 +60,7 @@ describe('ToggleSwitch', () => {
 
     act(() => {
       component = renderer.create(
-        <ToggleSwitch checked={true} label="Toggle" />
+        <Checkbox checked={true} label="Accept terms" />
       )
     })
 
@@ -71,7 +72,19 @@ describe('ToggleSwitch', () => {
 
     act(() => {
       component = renderer.create(
-        <ToggleSwitch checked={false} label="Toggle" />
+        <Checkbox checked={false} label="Accept terms" />
+      )
+    })
+
+    expect(component!.toJSON()).toMatchSnapshot()
+  })
+
+  it('renders disabled state', () => {
+    let component: renderer.ReactTestRenderer
+
+    act(() => {
+      component = renderer.create(
+        <Checkbox checked={true} disabled label="Accept terms" />
       )
     })
 
@@ -84,11 +97,11 @@ describe('ToggleSwitch', () => {
 
     act(() => {
       component = renderer.create(
-        <ToggleSwitch checked={false} onChange={onChange} label="Toggle" />
+        <Checkbox checked={false} onChange={onChange} label="Accept terms" />
       )
     })
 
-    const button = component!.root.findByProps({ role: 'switch' })
+    const button = component!.root.findByProps({ role: 'checkbox' })
 
     act(() => {
       button.props.onClick()
@@ -103,16 +116,16 @@ describe('ToggleSwitch', () => {
 
     act(() => {
       component = renderer.create(
-        <ToggleSwitch
+        <Checkbox
           checked={false}
           onChange={onChange}
           disabled
-          label="Toggle"
+          label="Accept terms"
         />
       )
     })
 
-    const button = component!.root.findByProps({ role: 'switch' })
+    const button = component!.root.findByProps({ role: 'checkbox' })
 
     act(() => {
       button.props.onClick?.()
@@ -121,14 +134,23 @@ describe('ToggleSwitch', () => {
     expect(onChange).not.toHaveBeenCalled()
   })
 
-  it('renders label only without description', () => {
+  it('toggles from checked to unchecked', () => {
+    const onChange = jest.fn()
     let component: renderer.ReactTestRenderer
 
     act(() => {
-      component = renderer.create(<ToggleSwitch label="Label only" />)
+      component = renderer.create(
+        <Checkbox checked={true} onChange={onChange} label="Accept terms" />
+      )
     })
 
-    expect(component!.toJSON()).toMatchSnapshot()
+    const button = component!.root.findByProps({ role: 'checkbox' })
+
+    act(() => {
+      button.props.onClick()
+    })
+
+    expect(onChange).toHaveBeenCalledWith(false)
   })
 
   it('calls onChange when the label is clicked', () => {
@@ -137,7 +159,7 @@ describe('ToggleSwitch', () => {
 
     act(() => {
       component = renderer.create(
-        <ToggleSwitch checked={false} onChange={onChange} label="Toggle" />
+        <Checkbox checked={false} onChange={onChange} label="Accept terms" />
       )
     })
 
@@ -158,15 +180,17 @@ describe('ToggleSwitch', () => {
 
     act(() => {
       component = renderer.create(
-        <ToggleSwitch
+        <Checkbox
           checked={false}
           onChange={onChange}
           disabled
-          label="Toggle"
+          label="Accept terms"
         />
       )
     })
 
+    // When disabled, the details div has onClick={undefined}, so no
+    // role-free clickable node exists — the label area is inert
     const labelAreaHandlers = component!.root.findAll(
       (node) => typeof node.props.onClick === 'function' && !node.props.role
     )
