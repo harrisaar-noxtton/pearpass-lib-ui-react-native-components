@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snackbar renders text correctly 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="Snackbar/Snackbar.tsx:12"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  role="status"
+  style={{}}
+>
+  <p
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="Text/Text.tsx:24"
+    data-style-src="react-strict-dom:web/runtime.js"
+    ref={null}
+    style={{}}
+  >
+    Copied to Clipboard
+  </p>
+</div>
+`;
+
+exports[`Snackbar renders with custom iconSize 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="Snackbar/Snackbar.tsx:12"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  role="status"
+  style={{}}
+>
+  <span
+    aria-hidden={true}
+    className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+    data-element-src="Snackbar/Snackbar.tsx:14"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  />
+  <p
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="Text/Text.tsx:24"
+    data-style-src="react-strict-dom:web/runtime.js"
+    ref={null}
+    style={{}}
+  >
+    Large icon
+  </p>
+</div>
+`;
+
+exports[`Snackbar renders with icon 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="Snackbar/Snackbar.tsx:12"
+  data-style-src="react-strict-dom:web/runtime.js"
+  ref={null}
+  role="status"
+  style={{}}
+>
+  <span
+    aria-hidden={true}
+    className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+    data-element-src="Snackbar/Snackbar.tsx:14"
+    data-style-src="react-strict-dom:web/runtime.js"
+    style={{}}
+  />
+  <p
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="Text/Text.tsx:24"
+    data-style-src="react-strict-dom:web/runtime.js"
+    ref={null}
+    style={{}}
+  >
+    Copied to Clipboard
+  </p>
+</div>
+`;

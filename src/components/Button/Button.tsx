@@ -9,13 +9,9 @@ import {
     variantStyleMap,
 } from './Button.config';
 import { ButtonSize, ButtonVariant } from './types';
+import { withIconSize } from '../../utils';
 
 type HtmlButtonProps = React.ComponentProps<typeof html.button>;
-
-type SizableIconProps = {
-    width?: number;
-    height?: number;
-};
 
 type ButtonBaseProps = Omit<HtmlButtonProps, 'children' | 'disabled' | 'type' | 'onClick'> & {
     onClick?: HtmlButtonProps['onClick'];
@@ -58,11 +54,6 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function 
     },
     ref
 ) {
-    const withIconSize = (icon: React.ReactNode, size: number) =>
-        React.isValidElement<SizableIconProps>(icon)
-            ? React.cloneElement(icon, { width: size, height: size })
-            : icon;
-
     const hasChildren = children !== null && children !== undefined && children !== false;
     const hasiconBefore = Boolean(iconBefore);
     const hasiconAfter = Boolean(iconAfter);
