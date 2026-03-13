@@ -9,6 +9,11 @@ jest.mock('./Link.styles', () => ({
     },
 }));
 
+jest.mock('./linkPlatformHelper', () => ({
+    getPlatformHref: (href?: string) => href,
+    useLinkPress: () => undefined,
+}));
+
 jest.mock('../Text/Text.styles', () => ({
     styles: {
         textBase: {},

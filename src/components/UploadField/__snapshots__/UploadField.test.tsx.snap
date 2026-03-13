@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UploadField renders context image when image prop is provided 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="UploadField/UploadField.tsx:142"
+  data-style-src="react-strict-dom:web/runtime.js"
+  style={{}}
+>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="UploadField/UploadField.tsx:144"
+    data-style-src="react-strict-dom:web/runtime.js"
+    ref={
+      {
+        "current": null,
+      }
+    }
+    style={{}}
+  >
+    <div
+      className="margin-x1ghz6dp padding-x1717udv"
+      data-element-src="UploadField/UploadField.tsx:152"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    >
+      <img
+        alt="Logo"
+        className="aspectRatio-xuw900x height-xt7dq6l maxWidth-x193iq5w"
+        data-element-src="UploadField/UploadField.tsx:153"
+        data-style-src="react-strict-dom:web/runtime.js"
+        src="https://example.com/logo.png"
+        style={{}}
+      />
+      <div
+        className="margin-x1ghz6dp padding-x1717udv"
+        data-element-src="UploadField/UploadField.tsx:154"
+        data-style-src="react-strict-dom:web/runtime.js"
+        style={{}}
+      >
+        <svg
+          data-testid="icon-upload"
+        />
+      </div>
+    </div>
+    <div
+      className="margin-x1ghz6dp padding-x1717udv"
+      data-element-src="UploadField/UploadField.tsx:164"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    >
+      <p
+        className="margin-x1ghz6dp padding-x1717udv"
+        data-element-src="Text/Text.tsx:24"
+        data-style-src="react-strict-dom:web/runtime.js"
+        ref={null}
+        style={{}}
+      >
+        <a
+          className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+          data-element-src="Link/Link.tsx:27"
+          data-style-src="react-strict-dom:web/runtime.js"
+          href="#"
+          onClick={[Function]}
+          ref={null}
+          style={{}}
+        />
+         
+      </p>
+    </div>
+    <input
+      aria-hidden="true"
+      multiple={false}
+      onChange={[Function]}
+      ref={
+        {
+          "current": null,
+        }
+      }
+      style={
+        {
+          "height": 1,
+          "opacity": 0,
+          "overflow": "hidden",
+          "pointerEvents": "none",
+          "position": "absolute",
+          "width": 1,
+        }
+      }
+      tabIndex={-1}
+      type="file"
+    />
+  </div>
+</div>
+`;
+
+exports[`UploadField renders the upload area by default 1`] = `
+<div
+  className="margin-x1ghz6dp padding-x1717udv"
+  data-element-src="UploadField/UploadField.tsx:142"
+  data-style-src="react-strict-dom:web/runtime.js"
+  data-testid="upload-field"
+  style={{}}
+>
+  <div
+    className="margin-x1ghz6dp padding-x1717udv"
+    data-element-src="UploadField/UploadField.tsx:144"
+    data-style-src="react-strict-dom:web/runtime.js"
+    ref={
+      {
+        "current": null,
+      }
+    }
+    style={{}}
+  >
+    <div
+      className="margin-x1ghz6dp padding-x1717udv"
+      data-element-src="UploadField/UploadField.tsx:159"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    >
+      <svg
+        data-testid="icon-upload"
+      />
+    </div>
+    <div
+      className="margin-x1ghz6dp padding-x1717udv"
+      data-element-src="UploadField/UploadField.tsx:164"
+      data-style-src="react-strict-dom:web/runtime.js"
+      style={{}}
+    >
+      <p
+        className="margin-x1ghz6dp padding-x1717udv"
+        data-element-src="Text/Text.tsx:24"
+        data-style-src="react-strict-dom:web/runtime.js"
+        ref={null}
+        style={{}}
+      >
+        <a
+          className="margin-x1ghz6dp padding-x1717udv textDecoration-x1hl2dhg textAlign-x16tdsg8 wordWrap-x1vvkbs"
+          data-element-src="Link/Link.tsx:27"
+          data-style-src="react-strict-dom:web/runtime.js"
+          href="#"
+          onClick={[Function]}
+          ref={null}
+          style={{}}
+        />
+         
+      </p>
+    </div>
+    <input
+      aria-hidden="true"
+      multiple={false}
+      onChange={[Function]}
+      ref={
+        {
+          "current": null,
+        }
+      }
+      style={
+        {
+          "height": 1,
+          "opacity": 0,
+          "overflow": "hidden",
+          "pointerEvents": "none",
+          "position": "absolute",
+          "width": 1,
+        }
+      }
+      tabIndex={-1}
+      type="file"
+    />
+  </div>
+</div>
+`;
