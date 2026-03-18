@@ -23,6 +23,8 @@ export const PasswordField = (props: PasswordFieldProps): React.ReactElement => 
     passwordIndicator,
     isGrouped,
     testID,
+    copyable = false,
+    onCopy,
     infoBox,
   } = props;
 
@@ -67,6 +69,8 @@ export const PasswordField = (props: PasswordFieldProps): React.ReactElement => 
       rightSlot={rightSlot}
       isGrouped={isGrouped}
       testID={testID}
+      copyable={copyable}
+      onCopy={onCopy}
       onFocus={() => setIsFocused(true)}
       onBlur={() => setIsFocused(false)}
     />

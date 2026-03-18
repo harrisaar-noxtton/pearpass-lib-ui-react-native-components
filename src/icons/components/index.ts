@@ -7,6 +7,7 @@ export { default as AccountCircleTone } from "./AccountCircleTone";
 export { default as Add } from "./Add";
 export { default as Check } from "./Check";
 export { default as Close } from "./Close";
+export { default as ContentCopy } from "./ContentCopy";
 export { default as DoneAll } from "./DoneAll";
 export { default as ErrorFilled } from "./ErrorFilled";
 export { default as Extension } from "./Extension";

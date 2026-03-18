@@ -19,6 +19,10 @@ export interface InputFieldProps {
   isGrouped?: boolean;
   testID?: string;
   inputRef?: React.RefObject<HTMLInputElement | null>;
+  /** When true, shows a copy button in the right slot */
+  copyable?: boolean;
+  /** Called when the copy button is clicked. Receives the current value. */
+  onCopy?: (value: string) => void;
   /** Called when the input gains focus */
   onFocus?: () => void;
   /** Called when the input loses focus */

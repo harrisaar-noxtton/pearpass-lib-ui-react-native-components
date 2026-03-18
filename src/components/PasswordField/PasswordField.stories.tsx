@@ -38,6 +38,8 @@ const storyStyles = css.create({
     display: 'flex',
     flexDirection: 'column',
     gap: tokens.spacing24,
+    flex: 1,
+    overflowY: 'scroll',
   },
   section: {
     display: 'flex',
@@ -133,6 +135,17 @@ export const WithPasswordIndicator: Story = {
     value: 'P@ssword123',
     variant: 'default',
     passwordIndicator: 'strong',
+    onChangeText: () => { },
+  },
+};
+
+export const Copyable: Story = {
+  args: {
+    label: 'Password',
+    value: 'super-secret-123',
+    variant: 'default',
+    copyable: true,
+    onCopy: (val: string) => alert(`Copied: ${val}`),
     onChangeText: () => { },
   },
 };

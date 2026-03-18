@@ -20,6 +20,7 @@ jest.mock('./InputField.styles', () => ({
     input: {},
     rightSlotContainer: {},
     errorMessage: {},
+    copyButton: {},
   },
   variantContainerStyleMap: {
     default: {},
@@ -43,6 +44,28 @@ jest.mock('../Text/Text.config', () => ({
 
 jest.mock('../FieldError/FieldError', () => ({
   FieldError: (props: FieldErrorProps) => <div data-testid="mock-field-error" {...props} />
+}));
+
+jest.mock('../Button', () => ({
+  Button: ({
+    children,
+    onClick,
+    'aria-label': ariaLabel,
+    'data-testid': testID,
+  }: {
+    children?: React.ReactNode;
+    onClick?: React.ComponentProps<'button'>['onClick'];
+    'aria-label'?: string;
+    'data-testid'?: string;
+  }) => (
+    <button onClick={onClick} aria-label={ariaLabel} data-testid={testID}>
+      {children}
+    </button>
+  ),
+}));
+
+jest.mock('../../icons', () => ({
+  ContentCopy: () => <span data-testid="copy-icon" />,
 }));
 
 

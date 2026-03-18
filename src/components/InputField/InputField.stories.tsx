@@ -1,9 +1,14 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import React from 'react';
-import { html, css } from 'react-strict-dom';
-import { InputField } from './InputField';
-import { tokens } from '../../theme/tokens.css';
-import { AccountCircleOutlined, DoneAll, VerifiedUser } from '../../icons';
+import type { Meta, StoryObj } from '@storybook/react'
+import React from 'react'
+import { html, css } from 'react-strict-dom'
+import { InputField } from './InputField'
+import { tokens } from '../../theme/tokens.css'
+import {
+  AccountCircleOutlined,
+  DoneAll,
+  EyeOutlined,
+  VerifiedUser
+} from '../../icons'
 
 const meta: Meta<typeof InputField> = {
   title: 'Components/InputField',
@@ -11,22 +16,22 @@ const meta: Meta<typeof InputField> = {
   argTypes: {
     variant: {
       control: { type: 'select' },
-      options: ['default', 'error'],
+      options: ['default', 'error']
     },
     inputType: {
       control: { type: 'select' },
-      options: ['text', 'password'],
+      options: ['text', 'password']
     },
     label: { control: 'text' },
     value: { control: 'text' },
     placeholderText: { control: 'text' },
     errorMessage: { control: 'text' },
-    rightSlot: { control: false },
-  },
-};
+    rightSlot: { control: false }
+  }
+}
 
-export default meta;
-type Story = StoryObj<typeof InputField>;
+export default meta
+type Story = StoryObj<typeof InputField>
 
 const storyStyles = css.create({
   container: {
@@ -50,7 +55,7 @@ const storyStyles = css.create({
     borderBottomWidth: '1px',
     borderBottomStyle: 'solid',
     borderBottomColor: tokens.colorBorderSecondary,
-    paddingBottom: tokens.spacing8,
+    paddingBottom: tokens.spacing8
   },
   grid: {
     display: 'grid',
@@ -61,14 +66,14 @@ const storyStyles = css.create({
   cell: {
     display: 'flex',
     flexDirection: 'column',
-    gap: tokens.spacing8,
+    gap: tokens.spacing8
   },
   caption: {
     fontFamily: tokens.fontPrimary,
     fontSize: tokens.fontSize12,
-    color: tokens.colorTextSecondary,
-  },
-});
+    color: tokens.colorTextSecondary
+  }
+})
 
 export const Default: Story = {
   args: {
@@ -76,18 +81,18 @@ export const Default: Story = {
     value: '',
     placeholderText: 'Enter username',
     variant: 'default',
-    onChangeText: () => { },
-  },
-};
+    onChangeText: () => {}
+  }
+}
 
 export const WithValue: Story = {
   args: {
     label: 'Username',
     value: 'john_doe',
     variant: 'default',
-    onChangeText: () => { },
-  },
-};
+    onChangeText: () => {}
+  }
+}
 
 export const ErrorState: Story = {
   args: {
@@ -95,9 +100,9 @@ export const ErrorState: Story = {
     value: 'bad-email',
     variant: 'error',
     errorMessage: 'Please enter a valid email address.',
-    onChangeText: () => { },
-  },
-};
+    onChangeText: () => {}
+  }
+}
 
 export const WithRightSlot: Story = {
   args: {
@@ -106,9 +111,9 @@ export const WithRightSlot: Story = {
     placeholderText: 'Enter account',
     variant: 'default',
     rightSlot: <AccountCircleOutlined color={tokens.colorTextPrimary} />,
-    onChangeText: () => { },
-  },
-};
+    onChangeText: () => {}
+  }
+}
 
 export const PasswordType: Story = {
   args: {
@@ -116,13 +121,62 @@ export const PasswordType: Story = {
     value: 'secret123',
     inputType: 'password',
     variant: 'default',
-    onChangeText: () => { },
+    onChangeText: () => {}
+  }
+}
+
+export const Copyable: Story = {
+  args: {
+    label: 'Username',
+    value: 'john_doe',
+    variant: 'default',
+    copyable: true,
+    onChangeText: () => {}
+  }
+}
+
+export const CopyableVariants: Story = {
+  parameters: {
+    controls: { disable: true }
   },
-};
+  render: () => (
+    <html.div style={storyStyles.container}>
+      <html.div style={storyStyles.section}>
+        <html.div style={storyStyles.grid}>
+          <html.div style={storyStyles.cell}>
+            <html.div style={storyStyles.caption}>
+              With custom onCopy handler
+            </html.div>
+            <InputField
+              label="Password"
+              value="super-secret-123"
+              copyable
+              onCopy={(val: string) => alert(`Copied: ${val}`)}
+              onChangeText={() => {}}
+            />
+          </html.div>
+          <html.div style={storyStyles.cell}>
+            <html.div style={storyStyles.caption}>
+              With right slot (eye icon) + copy
+            </html.div>
+            <InputField
+              label="Password"
+              value="super-secret-123"
+              inputType="password"
+              copyable
+              rightSlot={<EyeOutlined color={tokens.colorTextPrimary} />}
+              onChangeText={() => {}}
+            />
+          </html.div>
+        </html.div>
+      </html.div>
+    </html.div>
+  )
+}
 
 export const VariantMatrix: Story = {
   parameters: {
-    controls: { disable: true },
+    controls: { disable: true }
   },
   render: () => (
     <html.div style={storyStyles.container}>
@@ -135,7 +189,7 @@ export const VariantMatrix: Story = {
               label="Username"
               value=""
               placeholderText="e.g. janesmith"
-              onChangeText={() => { }}
+              onChangeText={() => {}}
             />
           </html.div>
           <html.div style={storyStyles.cell}>
@@ -143,7 +197,7 @@ export const VariantMatrix: Story = {
             <InputField
               label="Username"
               value="janesmith"
-              onChangeText={() => { }}
+              onChangeText={() => {}}
             />
           </html.div>
           <html.div style={storyStyles.cell}>
@@ -152,7 +206,7 @@ export const VariantMatrix: Story = {
               label="Verified account"
               value="harrisaar"
               rightSlot={<VerifiedUser color={tokens.colorPrimary} />}
-              onChangeText={() => { }}
+              onChangeText={() => {}}
             />
           </html.div>
           <html.div style={storyStyles.cell}>
@@ -161,7 +215,7 @@ export const VariantMatrix: Story = {
               label="Secret key"
               value="my-secret-key"
               inputType="password"
-              onChangeText={() => { }}
+              onChangeText={() => {}}
             />
           </html.div>
         </html.div>
@@ -171,12 +225,14 @@ export const VariantMatrix: Story = {
         <html.div style={storyStyles.sectionTitle}>Error Variant</html.div>
         <html.div style={storyStyles.grid}>
           <html.div style={storyStyles.cell}>
-            <html.div style={storyStyles.caption}>Error without message</html.div>
+            <html.div style={storyStyles.caption}>
+              Error without message
+            </html.div>
             <InputField
               label="Email"
               value="not-an-email"
               variant="error"
-              onChangeText={() => { }}
+              onChangeText={() => {}}
             />
           </html.div>
           <html.div style={storyStyles.cell}>
@@ -186,7 +242,7 @@ export const VariantMatrix: Story = {
               value="not-an-email"
               variant="error"
               errorMessage="Must be a valid email address"
-              onChangeText={() => { }}
+              onChangeText={() => {}}
             />
           </html.div>
           <html.div style={storyStyles.cell}>
@@ -197,12 +253,11 @@ export const VariantMatrix: Story = {
               variant="error"
               errorMessage="This field is required"
               rightSlot={<DoneAll color={tokens.colorSurfaceError} />}
-              onChangeText={() => { }}
+              onChangeText={() => {}}
             />
           </html.div>
         </html.div>
       </html.div>
     </html.div>
-  ),
-};
-
+  )
+}

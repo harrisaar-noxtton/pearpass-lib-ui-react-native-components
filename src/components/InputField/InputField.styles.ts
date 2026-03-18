@@ -84,9 +84,18 @@ export const styles = css.create({
   },
   rightSlotContainer: {
     display: 'flex',
+    flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
     flexShrink: 0,
+    gap: tokens.spacing4,
+  },
+  copyButton: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    cursor: 'pointer',
+    color: tokens.colorTextPrimary,
   },
   errorMessage: {
     fontFamily: tokens.fontPrimary,
