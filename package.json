@@ -45,8 +45,8 @@
     "generate-tokens": "node scripts/generate-tokens.mjs",
     "generate-icons:web": "svgr --out-dir src/icons/components src/icons/assets",
     "generate-icons:native": "svgr --native --ext native.tsx --no-index --out-dir src/icons/components src/icons/assets",
-    "generate-icons": "rm -rf src/icons/components && npm run generate-icons:web && npm run generate-icons:native && node scripts/generate-icon-story.mjs",
-    "build": "rm -rf dist && tsc --project tsconfig.build.json",
+    "generate-icons": "shx rm -rf src/icons/components && npm run generate-icons:web && npm run generate-icons:native && node scripts/generate-icon-story.mjs",
+    "build": "shx rm -rf dist && tsc --project tsconfig.build.json",
     "prepare": "(npm run build || true) && (husky || true)",
     "lint": "eslint ./src",
     "lint:fix": "eslint --fix ./src",
@@ -96,6 +96,7 @@
     "react-native-reanimated": "~3.17.4",
     "react-native-svg": "15.11.2",
     "react-test-renderer": "19.0.0",
+    "shx": "^0.4.0",
     "storybook": "^10.2.13",
     "typescript": "^5.9.3",
     "vite": "^7.3.1"
