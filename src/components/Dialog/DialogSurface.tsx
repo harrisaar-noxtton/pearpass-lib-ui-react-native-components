@@ -4,6 +4,7 @@ import { styles } from './Dialog.styles';
 import { Text } from '../Text';
 import { Close } from '../../icons';
 import { Button } from '../Button';
+import { useTheme } from '../../theme';
 
 type HtmlDivProps = React.ComponentProps<typeof html.div>;
 
@@ -35,6 +36,7 @@ export const DialogSurface = React.forwardRef<HTMLDivElement, DialogSurfaceProps
     },
     ref
 ) {
+    const { theme } = useTheme();
     const hasBody = children !== undefined && children !== null && children !== false;
     const hasFooter = footer !== undefined && footer !== null && footer !== false;
     const titleId = React.useId();
@@ -57,7 +59,7 @@ export const DialogSurface = React.forwardRef<HTMLDivElement, DialogSurfaceProps
                     <Button
                         variant="tertiary"
                         size="small"
-                        iconBefore={<Close />}
+                        iconBefore={<Close color={theme.colors.colorTextPrimary} />}
                         style={styles.closeButton}
                         onClick={onClose}
                         aria-label={closeButtonAriaLabel}
